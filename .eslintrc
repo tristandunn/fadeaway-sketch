@@ -1,0 +1,79 @@
+{
+  "env" : {
+    "es6" : true
+  },
+  "extends" : ["eslint:recommended"],
+  "globals" : {
+    "MSSliceLayer"         : false,
+    "NSApplication"        : false,
+    "NSArray"              : false,
+    "NSException"          : false,
+    "NSPipe"               : false,
+    "NSPredicate"          : false,
+    "NSProcessInfo"        : false,
+    "NSString"             : false,
+    "NSTask"               : false,
+    "NSTemporaryDirectory" : false,
+    "NSURL"                : false,
+    "NSUTF8StringEncoding" : false,
+    "Sketch"               : true
+  },
+  "parserOptions" : {
+    "ecmaVersion" : 6,
+    "sourceType"  : "module"
+  },
+  "rules"   : {
+    "array-bracket-spacing"   : [2, "never"],
+    "arrow-body-style"        : [2, "always"],
+    "arrow-parens"            : [2, "always"],
+    "arrow-spacing"           : [2],
+    "brace-style"             : [2],
+    "callback-return"         : [2],
+    "comma-dangle"            : [2, "never"],
+    "comma-spacing"           : [2, { "before" : false, "after" : true }],
+    "comma-style"             : [2, "last"],
+    "complexity"              : [2, 3],
+    "consistent-return"       : [2],
+    "constructor-super"       : [2],
+    "curly"                   : [2],
+    "dot-location"            : [2, "property"],
+    "dot-notation"            : [2],
+    "eqeqeq"                  : [2, "smart"],
+    "id-length"               : [2, { "min" : 1, "max" : 24 }],
+    "indent"                  : [2, 2, { "VariableDeclarator" : { "var": 2, "let" : 2, "const" : 3 } }],
+    "key-spacing"             : [2, {
+                                  "singleLine" : {
+                                    "beforeColon" : false,
+                                    "afterColon"  : true
+                                  },
+                                  "multiLine" : {
+                                    "beforeColon" : true,
+                                    "afterColon"  : true,
+                                    "align"       : "colon"
+                                  }
+                                }],
+    "linebreak-style"         : [2, "unix"],
+    "no-caller"               : [2],
+    "no-class-assign"         : [2],
+    "no-cond-assign"          : [2, "always"],
+    "no-confusing-arrow"      : [2],
+    "no-const-assign"         : [2],
+    "no-constant-condition"   : [2],
+    "no-delete-var"           : [2],
+    "no-empty"                : [2],
+    "no-eval"                 : [2],
+    "no-multiple-empty-lines" : [2, { "max" : 2 }],
+    "no-redeclare"            : [2],
+    "no-return-assign"        : [2, "always"],
+    "no-trailing-spaces"      : [2],
+    "no-undef"                : [2],
+    "no-unneeded-ternary"     : [2],
+    "no-unreachable"          : [2],
+    "no-unused-vars"          : [2],
+    "no-var"                  : [2],
+    "quotes"                  : [2, "double"],
+    "semi"                    : [2, "always"],
+    "strict"                  : [2, "global"],
+    "wrap-iife"               : [2, "outside"]
+  }
+}

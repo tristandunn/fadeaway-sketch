@@ -1,0 +1,30 @@
+{
+  "name"        : "Fadeaway",
+  "version"     : "0.1.0",
+  "identifier"  : "com.fadeaway.sketch",
+  "description" : "Open files in Fadeaway for uploading to Dribbble.",
+  "author"      : "Tristan Dunn",
+  "authorEmail" : "hello@tristandunn.com",
+  "commands"    : [
+    {
+      "script"     : "script.cocoascript",
+      "handler"    : "openArtboard",
+      "shortcut"   : "",
+      "name"       : "Open Artboard",
+      "identifier" : "open-artboard"
+    },
+    {
+      "script"     : "script.cocoascript",
+      "handler"    : "openSlice",
+      "shortcut"   : "",
+      "name"       : "Open Slice",
+      "identifier" : "open-slice"
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "open-artboard",
+      "open-slice"
+    ]
+  }
+}
